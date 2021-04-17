@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #1f2229;
+  --background2: #2e303c;
+  --background-button: #373945;
+  --background-button2: #4b4d59;
+  --yellow: #fae800;
+  --gray: #bec2c6;
+  --white: #fbfbfb;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+}
+
+body {
+  font: 16px "Poppins", Arial, sans-serif;
+  color: var(--white);
+  background: var(--background);
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+  body {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 87.5%;
+  }
+}

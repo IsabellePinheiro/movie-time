@@ -1,7 +1,16 @@
 import React from "react";
+import MenuList from "./components/MenuList";
+import Sidebar from "./components/Sidebar";
+
+import "./styles/global.scss";
 
 function App() {
-  return <h1>Hello world</h1>;
+  return (
+    <div style={{ display: "flex", flexDirection: "row" }}>
+      <Sidebar />
+      <MenuList />
+    </div>
+  );
 }
 
 export default App;
