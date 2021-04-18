@@ -1,21 +1,19 @@
 import React, { useState } from "react";
 import MenuList from "./components/MenuList";
-import { SideBar } from "./components/Sidebar";
+import { GenreResponseProps, SideBar } from "./components/Sidebar";
 
 import "./styles/global.scss";
 
 export function App() {
-  // const [selectedGenre, setSelectedGenres] = useState<GenreResponseProps>(
-  //   {} as GenreResponseProps
-  // );
+  const [selectedGenre, setSelectedGenre] = useState<GenreResponseProps>();
 
   return (
     <div style={{ display: "flex", flexDirection: "row" }}>
       <SideBar
-      // handleSelectGenre={setSelectedGenres}
-      // selectedGenre={selectedGenre}
+        handleSelectGenre={setSelectedGenre}
+        selectedGenre={selectedGenre}
       />
-      <MenuList />
+      <MenuList id={selectedGenre?.id || 28} />
     </div>
   );
 }
