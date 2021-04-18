@@ -1,6 +1,7 @@
 {
   "name": "movie-time",
   "version": "0.1.0",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
@@ -9,14 +10,12 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-feather": "^2.0.9",
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "sass": "^1.32.10"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
@@ -30,9 +29,17 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "babel-preset-react-app": "^10.0.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.3.1",
+    "identity-obj-proxy": "^3.0.0",
+    "node-sass": "^5.0.0",
+    "react-app-polyfill": "^2.0.0",
     "react-refresh": "^0.10.0",
     "sass-loader": "^11.0.1",
-    "type-fest": "^1.0.2"
+    "style-loader": "^2.0.0",
+    "ts-node": "^9.1.1",
+    "type-fest": "^1.0.2",
+    "webpack-cli": "^4.6.0"
   },
   "browserslist": {
     "production": [

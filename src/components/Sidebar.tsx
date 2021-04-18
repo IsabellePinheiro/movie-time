@@ -1,8 +1,9 @@
 import { useState } from "react";
 
 import "../styles/sidebar.scss";
+import { Button } from "./Button";
 
-export default function SideBar() {
+export function SideBar() {
   const [genres, setGenres] = useState(["Action", "Comedy", "Documentary"]);
 
   return (
@@ -13,7 +14,7 @@ export default function SideBar() {
 
       <div className="buttons-container">
         {genres.map((genre, key) => (
-          <button key={key}>{genre}</button>
+          <Button key={key} title={genre} />
         ))}
       </div>
     </nav>
